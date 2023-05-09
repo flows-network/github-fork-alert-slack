@@ -31,7 +31,7 @@ async fn handler(payload: EventPayload) {
         let html_url = forkee.html_url.unwrap().to_string();
         let time = forkee.created_at.expect("time not found");
 
-        let text = format!("{} forked your {}\n{}", name, html_url, time);
+        let text = format!("{name} forked your repo to {html_url}\n{time}");
         send_message_to_channel(&slack_workspace, &slack_channel, text);
     }
 }
