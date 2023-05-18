@@ -1,5 +1,5 @@
 use dotenv::dotenv;
-use github_flows::{listen_to_event, EventPayload, GithubLogin::Provided};
+use github_flows::{listen_to_event, EventPayload, GithubLogin::Default};
 use slack_flows::send_message_to_channel;
 use std::env;
 
@@ -7,12 +7,11 @@ use std::env;
 #[tokio::main(flavor = "current_thread")]
 pub async fn run() {
     dotenv().ok();
-    let github_login = env::var("github_login").unwrap_or("alabulei1".to_string());
     let github_owner = env::var("github_owner").unwrap_or("alabulei1".to_string());
     let github_repo = env::var("github_repo").unwrap_or("a-test".to_string());
 
     listen_to_event(
-        &Provided(github_login),
+        &Default,
         &github_owner,
         &github_repo,
         vec!["fork"],
