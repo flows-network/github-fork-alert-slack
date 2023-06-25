@@ -6,7 +6,7 @@
 
 This is a simple example of how flows.network works: When someone forked the designated GitHub repo, you will receive a Slack message.
 
-## Deploy your own GitHub Messenger bot
+## Deploy your own GitHub fork Messenger bot
 
 1. Load [Get a Slack notification when your GitHub repo is forked](https://flows.network/flow/createByTemplate/github-fork-alert-slack) template.
 2. Configure and authorize your Slack access
