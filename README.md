@@ -1,12 +1,12 @@
 # Get a Slack message when your GitHub repo is forked
 
-[Deploy this bot on your GitHub repo via flows.network](#deploy-Github-Star-Slack-Messenger-on-your-channel), and you will get a Slack bot that sends a message every time your GitHub repo is forked by a user. It helps DevRel and maintainers to get the latest updates of the Open source project.
+[Deploy this bot on your GitHub repo via flows.network](#deploy-your-own-Github-fork-Messenger-bot), and you will get a Slack bot that sends a message every time your GitHub repo is forked by a user. It helps DevRel and maintainers to get the latest updates of the Open source project.
 
 <img width="402" alt="image" src="https://github.com/flows-network/github-fork-alert-slack/assets/45785633/3fcdf103-6d0c-4757-b0de-45e4a5ef69c6">
 
 This is a simple example of how flows.network works: When someone forked the designated GitHub repo, you will receive a Slack message.
 
-## Deploy your own GitHub Star Messenger bot in 2 simple steps
+## Deploy your own GitHub Messenger bot
 
 1. Load [Get a Slack notification when your GitHub repo is forked](https://flows.network/flow/createByTemplate/github-fork-alert-slack) template.
 2. Configure and authorize your Slack access
